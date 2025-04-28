@@ -25,10 +25,7 @@ Apache Pinot was created by a team at LinkedIn to address user-facing analytics 
 Apache Pinot fits into a data ecosystem with three main components:
 
 ### 1. Ingest
-Pinot can ingest data from various operational sources:
-- Relational databases
-- Kafka topics (with particularly smooth integration)
-- Data lakes
+ It can ingest from batch data sources (such as Hadoop HDFS, Amazon S3, Azure ADLS, Google Cloud Storage) as well as stream data sources (such as Apache Kafka).
 
 ### 2. The Database Core
 At its core, Pinot uses a familiar tabular data model with columns having standard data types. What makes Pinot special is its indexing capabilities:
