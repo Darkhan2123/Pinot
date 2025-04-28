@@ -1,0 +1,42 @@
+{
+    "tableName": "orders",
+    "tableType": "REALTIME",
+    "segmentsConfig": {
+      "timeColumnName": "ts",
+      "timeType": "MILLISECONDS",
+      "schemaName": "orders",
+      "replicasPerPartition": "1"
+    },
+    "tenants": {},
+    "tableIndexConfig": {
+      "loadMode": "MMAP",
+      "streamConfigs": {
+        "streamType": "kafka",
+        "stream.kafka.consumer.type": "lowLevel",
+        "stream.kafka.topic.name": "orders",
+        "stream.kafka.decoder.class.name": "org.apache.pinot.plugin.stream.kafka.KafkaJSONMessageDecoder",
+        "stream.kafka.consumer.factory.class.name": "org.apache.pinot.plugin.stream.kafka20.KafkaConsumerFactory",
+        "stream.kafka.broker.list": "broker:29092",
+        "stream.kafka.consumer.prop.auto.offset.reset": "smallest"
+      }
+    },
+    "ingestionConfig": {
+
+      "transformConfigs": [
+        {
+          "columnName": "ts",
+          "transformFunction": "createdAt"
+        },
+        {
+          "columnName": "total_quantity",
+          "transformFunction": "JSONPATHLONG(items, '$.sum($.[*].quantity)')"
+        },
+        {
+          "columnName": "products_ordered",
+          "transformFunction": "JSONPATHARRAY(items, '$.length()')"
+        }
+      ]
+    },
+    "metadata": {
+    }
+  }
