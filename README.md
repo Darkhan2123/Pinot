@@ -63,9 +63,23 @@ Pinot excels in scenarios where:
 - Both historical and real-time data must be queryable through a unified interface
 - Data volumes are very large (terabytes to petabytes)
 
-## Pinot Architecture
+### Pinot Architecture
 
 At its core, Apache Pinot is a distributed system designed to handle massive scale while maintaining performance. Understanding Pinot's architecture is like understanding how a busy restaurant kitchen works - different specialized stations work together to deliver orders quickly even during peak hours.
+
+## Columnar Storage for Optimized Query Performance
+
+Apache Pinot uses a columnar storage format to enhance query performance. Unlike row-based systems, columnar storage accesses only the relevant columns during query execution. This reduces disk I/O and speeds up analytics. For instance, Pinot employs dictionary encoding to compress data, which improves read efficiency and minimizes storage requirements.
+
+This design is particularly effective for queries involving frequent aggregations. By focusing on specific columns, Pinot processes your queries faster and delivers results with minimal latency. This feature is crucial for applications like dashboards, where quick responses are essential for decision-making.
+
+## Horizontal Scalability for Large-Scale Real-Time Analytics
+
+Apache Pinot’s architecture supports horizontal scalability, allowing you to handle growing data volumes and user queries effortlessly. By adding more nodes, you can increase capacity without degrading performance. This scalability ensures consistent query speeds, even as your data grows.
+
+Pinot’s design simplifies scaling by distributing data and workloads across multiple servers. This approach avoids the complexity and high costs often associated with scaling traditional systems. Whether you’re managing petabyte-scale datasets or high-concurrency workloads, Pinot ensures your analytics remain fast and reliable.
+
+With these features, Apache Pinot empowers you to tackle the challenges of real-time analytics effectively. Its real-time ingestion, optimized storage, and scalability make it a standout choice for businesses seeking actionable insights.
 
 ### Core Components
 
