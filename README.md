@@ -38,9 +38,8 @@ Organizations seeking to implement real-time analytics capabilities, particularl
 
 ### Background
 
-The evolution of analytics capabilities has transformed how organizations leverage data. Thirty years ago, analytics consisted primarily of daily reports for executives - printed documents summarizing the previous day's business activities. Having insight into business activities from just a day ago was revolutionary at that time.
-
-However, as digital transactions became increasingly prevalent through apps and websites, both internal teams and end users needed more immediate visibility into system states. This shift created demand for analytics tools that could process massive datasets in real-time and serve results with extremely low latency.
+30 years ago, analytics consisted primarily of daily reports prepared for executives. These reports, often printed and bound, contained basic visualizations like pie charts summarizing the previous day's business activities. This was the birth of modern analytics and ETL (Extract, Transform, Load) processes.
+Having insight into business activities from just a day ago was revolutionary for decision-makers at that time. However, the analytics landscape has evolved dramatically since then.
 
 Traditional analytics databases, designed primarily for internal reporting and batch processing, struggled to meet these new requirements. This gap in capabilities prompted the engineering team at LinkedIn to develop what would eventually become Apache Pinot.
 
