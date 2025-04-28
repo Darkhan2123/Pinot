@@ -196,6 +196,8 @@ As Pinot's birthplace, LinkedIn employs it to power numerous user-facing analyti
 
 LinkedIn reports that Pinot powers 50+ user-facing products, ingesting millions of events per second and serving 100k+ queries per second at millisecond latency.
 
+![Pinot influence on LinkedIn](/images/pinot-blog-image-1.png) ![Pinot influence on LinkedIn](/images/pinot-blog-image-2.png)
+
 ### Uber Case Study
 
 Uber has implemented Pinot for several critical analytics applications:
