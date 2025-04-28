@@ -10,32 +10,11 @@ Apache Pinot is a real-time distributed OLAP (Online Analytical Processing) data
 
 Having insight into business activities from just a day ago was revolutionary for decision-makers at that time. However, the analytics landscape has evolved dramatically since then.
 
-### Evolution of Analytics Requirements
-Three major shifts have occurred in the analytics space:
-
-1. **Democratization of Analytics**: Analytics has migrated downward in organizations, with more people requiring access to analytics products beyond just executives.
-
-2. **Cycle Time Compression**: The acceptable time delay has shrunk dramatically - from daily reports to hours or even minutes.
-
-3. **Expanding Definition of Decision-Makers**: The concept of "decision-maker" has expanded beyond internal business users to include external users of applications, as businesses become increasingly digital.
-
 ### The Birth of User-Facing Analytics
 As digital transactions became more prevalent through apps and websites, end users needed visibility into system states. This gave rise to user-facing analytics, where analytics capabilities are exposed directly to customers or users.
 
 #### Example: Food Delivery App
 In a food delivery app, users need to know the average delivery times for nearby restaurants. This is an analytics query executed by an end user - the essence of user-facing analytics.
-
-### Internal vs. User-Facing Analytics: Different Requirements
-
-Tim Berglund in the video highlights three key differences between traditional internal analytics and user-facing analytics:
-
-| Requirement | Internal Analytics | User-Facing Analytics |
-|-------------|-------------------|------------------------|
-| **Latency** | Minutes (100s of seconds) | Tens of milliseconds |
-| **Freshness** | Minutes | Seconds |
-| **Concurrency** | ~100 users | ~1,000,000 users |
-
-Traditional tools like BigQuery, Snowflake, and Presto were designed for internal analytics needs. While they excel at dashboarding and internal reporting, they weren't built for the extreme requirements of user-facing analytics.
 
 ## The Birth of Apache Pinot
 
@@ -172,24 +151,3 @@ In production environments, Pinot has demonstrated:
 - Ingest rates of 1M+ events per second
 - Support for thousands of concurrent queries
 - Linear scalability with added nodes
-
-## Community and Development
-
-Apache Pinot graduated from Apache Incubator status to a top-level Apache project in 2019. The project has a growing community with:
-- Regular releases
-- Active GitHub repository
-- Growing adoption across industries
-- Commercial support via StarTree (founded by the original creators)
-
-## Conclusion
-
-Apache Pinot represents a new category of database technology specifically designed for user-facing analytics. By meeting the extreme requirements of latency, freshness, and concurrency needed for user-facing applications, Pinot enables businesses to unlock value from their data in ways not previously possible.
-
-The key question for organizations is not whether they are in the same industry as LinkedIn or Uber, but rather: "What value is locked in your data that could be exposed to users to help them make better decisions?" Apache Pinot provides the infrastructure to answer this question effectively.
-
-## References
-1. Apache Pinot official documentation
-2. StarTree resources and case studies
-3. LinkedIn Engineering blog posts
-4. "What is Apache Pinot" Lightboard presentation by Tim Berglund
-5. Apache Pinot GitHub repository
