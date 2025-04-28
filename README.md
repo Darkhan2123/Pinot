@@ -93,7 +93,7 @@ Pinot's architecture consists of four main components:
 
 **Minion**: Executes background tasks like converting data from raw formats into optimized segment files, purging old data, and other maintenance work. Minions are like the prep cooks and dishwashers who work behind the scenes to keep everything running smoothly.
 
-![Pinot Architecture](https://i.imgur.com/example.jpg)
+![Pinot Architecture](/images/image1)
 
 Pinot relies on two additional important technologies:
 
