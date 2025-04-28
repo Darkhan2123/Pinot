@@ -1,42 +1,25 @@
 https://www.youtube.com/watch?v=mwAH6t772E4&ab_channel=GOTOConferences
 
-# Why APACHE PINOT
-
-## Table of Contents
-1. [Executive Summary](#executive-summary)
-2. [Introduction](#introduction)
-   - 2.1 [Background](#background)
-   - 2.2 [Purpose](#purpose)
-   - 2.3 [Scope](#scope)
-3. [What is Apache Pinot?](#what-is-apache-pinot)
-   - 3.1 [Core Features](#core-features)
-   - 3.2 [Key Applications](#key-applications)
-4. [Pinot Architecture](#pinot-architecture)
-   - 4.1 [Core Components](#core-components)
-   - 4.2 [Data Flow](#data-flow)
-   - 4.3 [Query Processing](#query-processing)
-   - 4.4 [Data Storage](#data-storage)
-   - 4.5 [Indexing Strategies](#indexing-strategies)
-5. [Real-world Applications](#real-world-applications)
-   - 5.1 [LinkedIn Case Study](#linkedin-case-study)
-   - 5.2 [Uber Case Study](#uber-case-study)
-   - 5.3 [Other Organizations](#other-organizations)
-6. [Comparison With Other Systems](#comparison-with-other-systems)
-7. [Getting Started With Pinot](#getting-started-with-pinot)
-8. [Conclusions](#conclusions)
-9. [References](#references)
-
-## Executive Summary
-
-Apache Pinot is a real-time distributed OLAP (Online Analytical Processing) datastore designed to deliver ultra-low latency analytics at extremely high throughput. Originally developed at LinkedIn to power user-facing analytics applications, Pinot has become a critical infrastructure component for companies requiring real-time insights from massive datasets.
-
-This report provides a comprehensive analysis of Apache Pinot's architecture, capabilities, and real-world applications. It explains how Pinot bridges the gap between batch and streaming data processing while maintaining query performance in the millisecond range, even at petabyte scale and with thousands of concurrent users.
-
-Key findings indicate that Pinot's unique architecture - consisting of controllers, brokers, servers, and minions - enables it to excel in scenarios where traditional analytics databases fall short. Its ability to ingest both streaming and batch data simultaneously, coupled with specialized indexing technologies, positions Pinot as an ideal solution for modern user-facing analytics applications.
-
-Organizations seeking to implement real-time analytics capabilities, particularly customer-facing features, should consider Apache Pinot as a primary technology choice. The report concludes that Pinot represents a significant advancement in analytics infrastructure, enabling new categories of data-driven applications and experiences.
+# Why Apache Pinot??
 
 ## Introduction
+
+Apache Pinot revolutionizes real-time analytics by delivering sub-second query responses, even under high-concurrency workloads. Its architecture supports near-real-time ingestion, enabling you to analyze streaming data instantly. Unlike other tools, it excels in scalability, handling petabyte-scale datasets without compromising performance.
+
+Adoption across industries highlights its impact. For example, Apache Pinot boasts 12.9 million Docker pulls and 8,000 Meetup members globally. These metrics reflect its growing popularity as a reliable solution for real-time insights. Whether you need interactive dashboards or time-sensitive analytics, Apache Pinot empowers you to act on data faster than ever.
+
+Key Takeaways
+
+    Apache Pinot gives super-fast answers to questions in less than a second, perfect for live data checks and dashboards.
+
+    It can grow bigger easily, letting companies manage huge data without slowing down.
+
+    Smart ways of organizing data in Pinot make it faster to find answers, even when many people use it at the same time.
+
+    Pinot works well with tools like Kafka, helping handle and study live data quickly.
+
+    Companies can save money by using Pinot's special storage and automatic data copying.
+
 
 ### Background
 
