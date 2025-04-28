@@ -10,15 +10,15 @@ Adoption across industries highlights its impact. For example, Apache Pinot boas
 
 Key Takeaways
 
-    Apache Pinot gives super-fast answers to questions in less than a second, perfect for live data checks and dashboards.
+- Apache Pinot gives super-fast answers to questions in less than a second, perfect for live data checks and dashboards.
 
-    It can grow bigger easily, letting companies manage huge data without slowing down.
+- It can grow bigger easily, letting companies manage huge data without slowing down.
 
-    Smart ways of organizing data in Pinot make it faster to find answers, even when many people use it at the same time.
+- Smart ways of organizing data in Pinot make it faster to find answers, even when many people use it at the same time.
 
-    Pinot works well with tools like Kafka, helping handle and study live data quickly.
+- Pinot works well with tools like Kafka, helping handle and study live data quickly.
 
-    Companies can save money by using Pinot's special storage and automatic data copying.
+- Companies can save money by using Pinot's special storage and automatic data copying.
 
 
 ### Background
@@ -27,16 +27,6 @@ Key Takeaways
 Having insight into business activities from just a day ago was revolutionary for decision-makers at that time. However, the analytics landscape has evolved dramatically since then.
 
 Traditional analytics databases, designed primarily for internal reporting and batch processing, struggled to meet these new requirements. This gap in capabilities prompted the engineering team at LinkedIn to develop what would eventually become Apache Pinot.
-
-### Scope
-
-This report covers:
-- The fundamental concepts and features of Apache Pinot
-- A detailed explanation of Pinot's architecture and components
-- How data flows through Pinot's system
-- Real-world use cases and implementations
-- Comparisons with other analytics technologies
-- Basic deployment information
 
 ## What is Apache Pinot?
 
