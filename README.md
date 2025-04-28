@@ -1,4 +1,6 @@
-# Apache Pinot: A Comprehensive Technical Report
+https://www.youtube.com/watch?v=mwAH6t772E4&ab_channel=GOTOConferences
+
+# Why APACHE PINOT
 
 ## Table of Contents
 1. [Executive Summary](#executive-summary)
@@ -43,10 +45,6 @@ Having insight into business activities from just a day ago was revolutionary fo
 
 Traditional analytics databases, designed primarily for internal reporting and batch processing, struggled to meet these new requirements. This gap in capabilities prompted the engineering team at LinkedIn to develop what would eventually become Apache Pinot.
 
-### Purpose
-
-This technical report aims to provide a comprehensive understanding of Apache Pinot, its architecture, capabilities, and applications. By examining how Pinot works at both high and detailed technical levels, this report will help readers assess whether Pinot might be suitable for their specific analytics needs.
-
 ### Scope
 
 This report covers:
@@ -56,12 +54,6 @@ This report covers:
 - Real-world use cases and implementations
 - Comparisons with other analytics technologies
 - Basic deployment information
-
-The report does not cover:
-- Step-by-step installation procedures
-- Detailed configuration options
-- Performance tuning recommendations
-- Code-level implementation details
 
 ## What is Apache Pinot?
 
